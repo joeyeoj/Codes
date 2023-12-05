@@ -83,6 +83,35 @@ python_code_photon_counts="
 import matplotlib.pyplot as plt
 import numpy as np
 
+params={
+        # 'axes.labelsize':20,
+        # 'xtick.labelsize':'large',
+        # 'ytick.labelsize':'large',
+        'xtick.direction':'in',
+        'ytick.direction':'in',
+        'xtick.minor.visible':True,
+        'ytick.minor.visible':True,
+        'xtick.top':True,
+        'ytick.right':True,
+        'xtick.labeltop':False,
+        'ytick.labelright':False,
+        'xtick.labelbottom':True,
+        'ytick.labelleft':True,
+        # 'xtick.major.size':10,
+        # 'ytick.major.size':10,
+        # 'xtick.minor.size':5,
+        # 'ytick.minor.size':5,
+        # 'xtick.major.width':1.5,
+        # 'ytick.major.width':1.5,
+        # 'xtick.minor.width':1,
+        # 'ytick.minor.width':1,
+        # 'errorbar.capsize':3,
+        # 'legend.fontsize':'xx-large',
+        'font.family':'serif',
+        'mathtext.default':'it',
+        'figure.subplot.wspace':0}
+plt.rcParams.update(params)
+
 mean=np.mean([float(x) for x in '${photon_counts_background_str}'.split(',')])
 std_dev=round(np.sqrt(mean))
 lower_bound=mean-std_dev
@@ -91,8 +120,8 @@ upper_bound=mean+std_dev
 radius_counts = [float(x) for x in '${radius_counts_str}'.split(',')]
 photon_counts = [float(x) for x in '${photon_counts_str}'.split(',')]
 photon_counts_err=[round(np.sqrt(float(x))) for x in '${photon_counts_str}'.split(',')]
-plt.figure(figsize=(10, 8))
-plt.errorbar(radius_counts, photon_counts, yerr=photon_counts_err, fmt='o', color='purple')
+fig, ax=plt.subplots(1,1,figsize=(8,6))
+ax.errorbar(radius_counts, photon_counts, yerr=photon_counts_err, fmt='o', color='purple')
 plt.xlim(0,16)
 # 画出误差范围
 plt.fill_between([0,16], lower_bound, upper_bound, color='gray', alpha=0.5, label='$\mathrm{1\sigma~Range~is~}$'+str(round(lower_bound))+'-'+str(round(upper_bound)))
@@ -111,8 +140,8 @@ print('the boundary of radius (pixel) is: '+str(radius_max))
 
 # 用arcsec表示radius
 radius_counts_arcsec = [round(float(x)*0.492,3) for x in '${radius_counts_str}'.split(',')]
-plt.figure(figsize=(10, 8))
-plt.errorbar(radius_counts_arcsec, photon_counts, yerr=photon_counts_err, fmt='o', color='purple')
+fig, ax=plt.subplots(1,1,figsize=(8,6))
+ax.errorbar(radius_counts_arcsec, photon_counts, yerr=photon_counts_err, fmt='o', color='purple')
 upper_x=16*0.492
 plt.xlim(0,upper_x)
 plt.fill_between([0,upper_x], lower_bound, upper_bound, color='gray', alpha=0.5, label='$\mathrm{1\sigma~Range~is~}$'+str(lower_bound)+'-'+str(upper_bound))
@@ -146,6 +175,35 @@ from sherpa.astro.ui import *
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 import numpy as np
+
+params={
+        # 'axes.labelsize':20,
+        # 'xtick.labelsize':'large',
+        # 'ytick.labelsize':'large',
+        'xtick.direction':'in',
+        'ytick.direction':'in',
+        'xtick.minor.visible':True,
+        'ytick.minor.visible':True,
+        'xtick.top':True,
+        'ytick.right':True,
+        'xtick.labeltop':False,
+        'ytick.labelright':False,
+        'xtick.labelbottom':True,
+        'ytick.labelleft':True,
+        # 'xtick.major.size':10,
+        # 'ytick.major.size':10,
+        # 'xtick.minor.size':5,
+        # 'ytick.minor.size':5,
+        # 'xtick.major.width':1.5,
+        # 'ytick.major.width':1.5,
+        # 'xtick.minor.width':1,
+        # 'ytick.minor.width':1,
+        # 'errorbar.capsize':3,
+        # 'legend.fontsize':'xx-large',
+        'font.family':'serif',
+        'mathtext.default':'it',
+        'figure.subplot.wspace':0}
+plt.rcParams.update(params)
 
 data_nh=[]
 data_gamma=[]
@@ -220,14 +278,14 @@ for count in range(5, 105, 5):
 data=[[count for count in range(5, 105, 5)], rstat_list, data_nh, data_nh_lower, data_nh_upper, data_gamma, data_gamma_lower, data_gamma_upper, data_ampl, data_ampl_lower, data_ampl_upper]
 data_transposed=list(map(list, zip(*data)))
 title=[\"count\", \"Reduced Stat\", \"nH\", \"nH_lower\", \"nH_upper\", \"gamma\", \"gamma_lower\", \"gamma_upper\", \"ampl\", \"ampl_lower\", \"ampl_upper\"]
-fig, ax =plt.subplots(1,1)
+fig, ax=plt.subplots(1,1,figsize=(8,6))
 ax.axis('tight')
 ax.axis('off')
 the_table = ax.table(cellText=data_transposed, colLabels=title, cellLoc = 'center', loc='center')
 # 设置表格字体
 font = FontProperties()
-font.set_family('Menlo')
-font.set_name('Menlo')
+font.set_family('serif')
+font.set_name('serif')
 font.set_style('normal')
 
 the_table.auto_set_font_size(False)
@@ -237,15 +295,15 @@ the_table.auto_set_column_width(col=list(range(len(title))))
 
 plt.savefig('fit_table.png',dpi=300)
 
-plt.figure(figsize=(10, 8))
-plt.errorbar([count for count in range(5, 105, 5)], data_nh, yerr=[data_nh_error_min, data_nh_error_max], fmt='o', color='purple')
+fig, ax=plt.subplots(1,1,figsize=(8,6))
+ax.errorbar([count for count in range(5, 105, 5)], data_nh, yerr=[data_nh_error_min, data_nh_error_max], fmt='o', color='purple')
 plt.xlabel('Group Counts')
 plt.ylabel('abs1.nH')
 plt.title('abs1.nH vs Group Counts')
 plt.savefig('abs1.nH_vs_Group_Counts.png', dpi=300)
 plt.close()
-plt.figure(figsize=(10, 8))
-plt.errorbar([count for count in range(5, 105, 5)], data_gamma, yerr=[data_gamma_error_min, data_gamma_error_max], fmt='o', color='purple')
+fig, ax=plt.subplots(1,1,figsize=(8,6))
+ax.errorbar([count for count in range(5, 105, 5)], data_gamma, yerr=[data_gamma_error_min, data_gamma_error_max], fmt='o', color='purple')
 plt.xlabel('Group Counts')
 plt.ylabel('p1.gamma')
 plt.title('p1.gamma vs Group Counts')
