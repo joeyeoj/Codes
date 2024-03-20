@@ -1,20 +1,20 @@
 # https://cxc.cfa.harvard.edu/ciao/threads/prep_chart/
-# run: conda activate ciao-4.15
+# run: conda activate ciao
 pfolder=/Users/joey/Documents/Data/Chandra_data
 cd ${pfolder}
 # 下载数据，如942，输入obsid=942
 read -p 'enter obsid ' obsid
-obsid=942
-# download_chandra_obsid $obsid
+# obsid=942
+download_chandra_obsid $obsid
 cd ${pfolder}/${obsid}
 # 数据处理，输入input file和output file, /Users/joey/Chandra_data/942和/Users/joey/Chandra_data/942/repro
-# chandra_repro indir=${pfolder}/${obsid} outdir=${pfolder}/${obsid}/repro
+chandra_repro indir=${pfolder}/${obsid} outdir=${pfolder}/${obsid}/repro
 cd ${pfolder}/${obsid}/repro
 # 进入Chandra quick research查找源坐标（还没找到快捷方法。。dmstat/dmcoords也许有用
 read -p 'enter the source coordinate, ra, e.g., 12:16:56.990 ' ra
 read -p 'enter the source coordinate, dec, e.g., +37:43:35.69 ' dec
-ra=12:16:56.990
-dec=+37:43:35.69
+# ra=12:16:56.990
+# dec=+37:43:35.69
 
 # 将dmcoords中的参数值恢复为系统默认值
 punlearn dmcoords
@@ -32,8 +32,8 @@ pget dmcoords theta phi
 
 read -p 'enter the name of source spectrum ' name
 read -p 'enter NH ' NH
-name=ngc4244
-NH=0.5
+# name=ngc4244
+# NH=0.5
 
 photon_counts_list=()
 radius_counts_list=()
@@ -162,10 +162,10 @@ line=$(echo "$output" | grep "the boundary of radius (pixel) is:")
 radius_max=${line##* }
 
 specextract "${pfolder}/${obsid}/repro/acisf0${obsid1}_repro_evt2.fits[sky=circle(${ra},${dec},${radius_max})]" ${name} verbose=0 clob+
-# read -p 'enter the energy lower limit (keV), e.g., 0.4 ' elow
-# read -p 'enter the energy upper limit (keV), e.g., 6.0 ' ehigh
-elow=0.4
-ehigh=6.0
+read -p 'enter the energy lower limit (keV), e.g., 0.4 ' elow
+read -p 'enter the energy upper limit (keV), e.g., 6.0 ' ehigh
+# elow=0.4
+# ehigh=6.0
 #只对reduced statistic进行判断
 python_code_groupcounts="
 from sherpa.astro.ui import *
@@ -208,12 +208,20 @@ for count in range(40, 55, 5):
     group_counts(count)
     notice(${elow},${ehigh})
     set_source( xsphabs.abs1 * powlaw1d.p1)
-    abs1.NH = 0.5
+    abs1.NH = ${NH}
+    # 寻找单色能量(a monochromatic energy)
+    flux_data = get_model_plot()
+    # xhi and xlo is the range of energy
+    egrid = (flux_data.xhi+flux_data.xlo)/2.0
+    # y is the predicted flux by the model
+    flux = flux_data.y
+    mean_e = np.sum(flux*egrid)/np.sum(flux)
     guess(p1)
     fit()
     fit_results = get_fit_results()
     dof = fit_results.dof
     if dof>20:
+        np.savetxt(\"mean_e.txt\", [mean_e], fmt=\"%.2f\")
         reduced_stat = fit_results.rstat
         # set_conf_opt(\"sigma\", 1)
         conf()
@@ -266,22 +274,22 @@ for count in range(40, 55, 5):
 python -c "$python_code_groupcounts"
 
 # if count==10:
-    #     # 寻找单色能量(a monochromatic energy)
-    #     flux_data = get_model_plot()
-    #     # xhi and xlo is the range of energy
-    #     egrid = (flux_data.xhi+flux_data.xlo)/2.0
-    #     # y is the predicted flux by the model
-    #     flux = flux_data.y
-    #     mean_e = np.sum(flux*egrid)/np.sum(flux)
-    #     np.savetxt(\"mean_e.txt\", [mean_e], fmt=\"%.2f\")
+#         # 寻找单色能量(a monochromatic energy)
+#         flux_data = get_model_plot()
+#         # xhi and xlo is the range of energy
+#         egrid = (flux_data.xhi+flux_data.xlo)/2.0
+#         # y is the predicted flux by the model
+#         flux = flux_data.y
+#         mean_e = np.sum(flux*egrid)/np.sum(flux)
+#         np.savetxt(\"mean_e.txt\", [mean_e], fmt=\"%.2f\")
 
-# mean_e=$(cat mean_e.txt)
-# rm mean_e.txt
-# # 计算源的光通量，使用宽波段0.4-6.0kev，对应单色能量（a monochromatic energy）为mean_e kev，得到photon_flux
-# # https://cxc.cfa.harvard.edu/ciao/why/monochromatic_energy.html
-# srcflux acisf0${obsid1}_repro_evt2.fits "${ra} ${dec}" flux bands="${elow}:${ehigh}:${mean_e}" psfmethod=quick verbose=0 clob+
-# echo "photon flux in ${mean_e}:"
-# dmkeypar flux_${elow}-${ehigh}.flux net_photflux_aper echo+
+mean_e=$(cat mean_e.txt)
+rm mean_e.txt
+# 计算源的光通量，使用宽波段0.4-6.0kev，对应单色能量（a monochromatic energy）为mean_e kev，得到photon_flux
+# https://cxc.cfa.harvard.edu/ciao/why/monochromatic_energy.html
+srcflux acisf0${obsid1}_repro_evt2.fits "${ra} ${dec}" flux bands="${elow}:${ehigh}:${mean_e}" psfmethod=quick verbose=0 clob+
+echo "photon flux in ${mean_e}:"
+dmkeypar flux_${elow}-${ehigh}.flux net_photflux_aper echo+
 
 # 查找obs_id和obi_num
 echo "obs_id: "
