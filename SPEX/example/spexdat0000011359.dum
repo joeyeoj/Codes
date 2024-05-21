@@ -1,0 +1,34 @@
+ Instrument number                    :        1
+ Name of spectral data file           : plik
+ Name of spectral response file       : xr7ev
+ Number of model sectors              :        1
+ Number of data regions in response   :        1
+ Number of data regions in data       :        1
+ Number of response groups            :        1
+ Summary of data for region number    :        1
+ Number of data channels              :    49628
+ Data energy range (keV)              :    9.80000E-02    24.912
+ Net source count rate (counts/s)     :    0.12174     +/-    1.10336E-03
+ Net source counts                    :    12174 +/-      110
+ Model background count rate(c/s)     :     0.0000
+ Background count rate subtracted(c/s):     0.0000     +/-     0.0000
+ Background counts subtracted         :        0 +/-        0
+ Exposure time (s) (mean, min, max)   :    1.00000E+05   1.00000E+05   1.00000E+05
+ Average integration time per channel :    1.00000E+05 s
+ Minimum integration time per channel :    1.00000E+05 s
+ Maximum integration time per channel :    1.00000E+05 s
+
+ Plot type      plot   colour        style         width hist symbol   size
+----------------------------------------------------------------------------
+ data symbol    no     white                          1   -      17    1.00
+ data bin width yes    white         --------         1   -
+ data error bar yes    white         --------         1   -
+ data line      no     white         --------         1  yes
+ error line     no     green         --------         1  yes
+ background lineyes    blue          -- -- --         1  yes
+ model line     yes    red           --------         1  yes
+ model filling  no     red           solid            1   -
+ model hatch angle, separation and phase:   45.00   1.00   0.00
+
+********************************************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
