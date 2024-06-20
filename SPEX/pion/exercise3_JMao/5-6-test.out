@@ -1,0 +1,1307 @@
+log output 5-6-test
+--------------------------------------------------------------------------------
+ Number of sectors         :     1
+ Sector:    1 Number of model components:     6
+    Nr.    1: reds
+    Nr.    2: hot
+    Nr.    3: pow [6,5,1,2 ]
+    Nr.    4: mbb [6,5,1,2 ]
+    Nr.    5: pion[1,2 ]
+    Nr.    6: pion[5,1,2 ]
+model show
+--------------------------------------------------------------------------------------------------
+sect comp mod  acro parameter with unit     value      status    minimum   maximum lsec lcom lpar
+
+   1    1 reds z    Redshift             1.1580000E-02 frozen   -1.0      1.00E+10
+   1    1 reds flag Flag: cosmo=0, vel=1  0.000000     frozen    0.0       1.0
+
+   1    2 hot  nh   X-Column (1E28/m**2) 8.5000005E-03 frozen    0.0      1.00E+20
+   1    2 hot  t    Temperature (keV)    1.0000000E-06 frozen   1.00E-06  1.00E+03
+   1    2 hot  rt   T(balance) / T(spec)  1.000000     frozen   1.00E-04  1.00E+04
+   1    2 hot  hden Hyd dens (1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    2 hot  fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    2 hot  v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    2 hot  rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    2 hot  dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    2 hot  zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    2 hot  ref  Reference atom        1.000000     frozen    1.0       30.
+   1    2 hot  01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  03   Abundance Li          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  04   Abundance Be          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  05   Abundance B           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  09   Abundance F           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  15   Abundance P           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  17   Abundance Cl          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  19   Abundance K           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  21   Abundance Sc          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  22   Abundance Ti          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  23   Abundance V           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  24   Abundance Cr          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  25   Abundance Mn          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  27   Abundance Co          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  29   Abundance Cu          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  30   Abundance Zn          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  file File electr.distrib.
+   1    2 hot  b    B field (Tesla)       0.000000     frozen    0.0      1.00E+05
+
+   1    3 pow  norm Norm (1E44 ph/s/keV) 4.7249674E+08 thawn     0.0      1.00E+20
+   1    3 pow  gamm Photon index          1.769354     thawn    -10.       10.
+   1    3 pow  dgam Photon index break    0.000000     frozen   -10.       10.
+   1    3 pow  e0   Break energy (keV)   1.0000000E+10 frozen    0.0      1.00E+20
+   1    3 pow  b    Break strength        0.000000     frozen    0.0       10.
+   1    3 pow  type Type of norm          0.000000     frozen    0.0       1.0
+   1    3 pow  elow Low flux limit (keV)  2.000000     frozen   1.00E-20  1.00E+10
+   1    3 pow  eupp Upp flux limit (keV)  10.00000     frozen   1.00E-20  1.00E+10
+   1    3 pow  lum  Luminosity (1E30 W)  1.7310868E+07 frozen    0.0      1.00E+20
+
+   1    4 mbb  norm Norm (1E26 m**0.5)   2.0567599E+09 thawn     0.0      1.00E+20
+   1    4 mbb  t    Temperature (keV)    0.1606496     thawn    1.00E-04  1.00E+03
+
+   1    5 pion nh   X-Column (1E28/m**2) 2.2206060E-03 thawn    1.00E-14  1.00E+20
+   1    5 pion xil  Log xi (1E-9 Wm)      1.187020     thawn    -7.0       10.
+   1    5 pion u    U                    0.1503179     frozen   1.00E-10  1.00E+10
+   1    5 pion hden X-density(1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    5 pion fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    5 pion v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    5 pion rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    5 pion dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    5 pion zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    5 pion type type (0=xi , 1=lixi)  0.000000     frozen    0.0       1.0
+   1    5 pion lixi L_ion/xi (1E39/m)    6.6031500E+07 frozen   1.00E-20  1.00E+20
+   1    5 pion ref  Reference atom        1.000000     frozen    1.0       30.
+   1    5 pion 01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 03   Abundance Li          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 04   Abundance Be          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 05   Abundance B           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 09   Abundance F           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 15   Abundance P           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 17   Abundance Cl          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 19   Abundance K           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 21   Abundance Sc          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 22   Abundance Ti          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 23   Abundance V           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 24   Abundance Cr          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 25   Abundance Mn          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 27   Abundance Co          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 29   Abundance Cu          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 30   Abundance Zn          0.000000     frozen    0.0      1.00E+10
+   1    5 pion file File electr.distrib.
+   1    5 pion omeg Scaling factor emis.  0.000000     frozen    0.0      1.00E+10
+   1    5 pion mix  Fraction forw. emis.  1.000000     frozen    0.0       1.0
+   1    5 pion exth Extern heat (W/m**3)  0.000000     frozen  -1.00E+20  1.00E+20
+   1    5 pion fmod Show all solutions    0.000000     frozen    0.0       1.0
+   1    5 pion soln Which solution        0.000000     frozen    0.0       8.0
+   1    5 pion tmod Temperature mode      0.000000     frozen    0.0       1.0
+   1    5 pion tinp Input T (keV)         1.000000     frozen   5.00E-04  1.00E+03
+   1    5 pion tadi Adiab. cool time (s) 1.0000000E+30 frozen   1.00E-30  1.00E+30
+   1    5 pion acc  Acceler. (m/s**2)    1.0127317E-11 frozen    0.0       0.0
+
+   1    6 pion nh   X-Column (1E28/m**2) 9.9999998E-15 thawn    1.00E-14  1.00E+20
+   1    6 pion xil  Log xi (1E-9 Wm)     0.3170214     thawn    -7.0       10.
+   1    6 pion u    U                    2.0277377E-02 frozen   1.00E-10  1.00E+10
+   1    6 pion hden X-density(1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    6 pion fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    6 pion v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    6 pion rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    6 pion dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    6 pion zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    6 pion type type (0=xi , 1=lixi)  0.000000     frozen    0.0       1.0
+   1    6 pion lixi L_ion/xi (1E39/m)    4.8949693E+08 frozen   1.00E-20  1.00E+20
+   1    6 pion ref  Reference atom        1.000000     frozen    1.0       30.
+   1    6 pion 01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 03   Abundance Li          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 04   Abundance Be          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 05   Abundance B           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 09   Abundance F           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 15   Abundance P           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 17   Abundance Cl          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 19   Abundance K           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 21   Abundance Sc          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 22   Abundance Ti          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 23   Abundance V           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 24   Abundance Cr          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 25   Abundance Mn          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 27   Abundance Co          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 29   Abundance Cu          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 30   Abundance Zn          0.000000     frozen    0.0      1.00E+10
+   1    6 pion file File electr.distrib.
+   1    6 pion omeg Scaling factor emis.  0.000000     frozen    0.0      1.00E+10
+   1    6 pion mix  Fraction forw. emis.  1.000000     frozen    0.0       1.0
+   1    6 pion exth Extern heat (W/m**3)  0.000000     frozen  -1.00E+20  1.00E+20
+   1    6 pion fmod Show all solutions    0.000000     frozen    0.0       1.0
+   1    6 pion soln Which solution        0.000000     frozen    0.0       8.0
+   1    6 pion tmod Temperature mode      0.000000     frozen    0.0       1.0
+   1    6 pion tinp Input T (keV)         1.000000     frozen   5.00E-04  1.00E+03
+   1    6 pion tadi Adiab. cool time (s) 1.0000000E+30 frozen   1.00E-30  1.00E+30
+   1    6 pion acc  Acceler. (m/s**2)    5.9334928E-12 frozen    0.0       0.0
+
+
+Instrument     1 region    1 has norm    1.00000E+00 and is frozen
+
+--------------------------------------------------------------------------------
+ Fluxes and restframe luminosities between   2.0000     and    10.000     keV
+
+ sect comp mod   photon flux   energy flux nr of photons    luminosity
+              (phot/m**2/s)      (W/m**2)   (photons/s)           (W)
+    1    3 pow    758.307      5.341996E-13  2.558555E+52  1.731063E+37
+    1    4 mbb    4.51466      1.569438E-15  2.131449E+50  7.388248E+34
+    1    5 pion   0.00000       0.00000       0.00000       0.00000
+    1    6 pion   0.00000       0.00000       0.00000       0.00000
+
+--------------------------------------------------------------------------------
+ Fit method        : Classical Levenberg-Marquardt
+ Fit statistic     : C-statistic
+ Fit statistic used:    105984.34
+ C-statistic       :    105984.34
+ Expected C-stat   :      4884.07 +/-        97.41
+ Chi-squared value :    767614.75
+ Degrees of freedom:      5330
+ W-statistic       :    103467.23
+
+par show
+log close save
+plot adum 5-6-test
+comp relation 5 : 6 0
+--------------------------------------------------------------------------------
+ Number of sectors         :     1
+ Sector:    1 Number of model components:     6
+    Nr.    1: reds
+    Nr.    2: hot
+    Nr.    3: pow [6,5,1,2 ]
+    Nr.    4: mbb [6,5,1,2 ]
+    Nr.    5: pion[]
+    Nr.    6: pion[]
+model show
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+ Parameter    7 is at lower limit. Suggestion: fit again
+ Parameter    8 is at lower limit. Suggestion: fit again
+ Error nr   2 occurred in process:  31 (condec    )
+ This error is generated when either the model is set-up incorrectly
+ or when one of the input parameters of a model is outside the valid range.
+ To avoid this error, please check:
+
+   - whether your model is set-up correctly, especially for the pion model,
+   - whether the values of your input parameters are reasonable,
+   - and, if this error occurs during a fit or error search,
+     whether the parameter range is to large (par range command).
+
+ If there is more detailed error information, it is shown below:
+
+ No equilibrium solution is possible
+ Is the model properly related using com rel?
+ Perhaps too much Compton heating?
+ Try cutting the hardest part of the spectrum
+--------------------------------------------------------------------------------------------------
+sect comp mod  acro parameter with unit     value      status    minimum   maximum lsec lcom lpar
+
+   1    1 reds z    Redshift             1.1580000E-02 frozen   -1.0      1.00E+10
+   1    1 reds flag Flag: cosmo=0, vel=1  0.000000     frozen    0.0       1.0
+
+   1    2 hot  nh   X-Column (1E28/m**2) 8.5000005E-03 frozen    0.0      1.00E+20
+   1    2 hot  t    Temperature (keV)    1.0000000E-06 frozen   1.00E-06  1.00E+03
+   1    2 hot  rt   T(balance) / T(spec)  1.000000     frozen   1.00E-04  1.00E+04
+   1    2 hot  hden Hyd dens (1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    2 hot  fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    2 hot  v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    2 hot  rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    2 hot  dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    2 hot  zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    2 hot  ref  Reference atom        1.000000     frozen    1.0       30.
+   1    2 hot  01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  03   Abundance Li          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  04   Abundance Be          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  05   Abundance B           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  09   Abundance F           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  15   Abundance P           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  17   Abundance Cl          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  19   Abundance K           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  21   Abundance Sc          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  22   Abundance Ti          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  23   Abundance V           1.000000     frozen    0.0      1.00E+10
+   1    2 hot  24   Abundance Cr          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  25   Abundance Mn          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  27   Abundance Co          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  29   Abundance Cu          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  30   Abundance Zn          1.000000     frozen    0.0      1.00E+10
+   1    2 hot  file File electr.distrib.
+   1    2 hot  b    B field (Tesla)       0.000000     frozen    0.0      1.00E+05
+
+   1    3 pow  norm Norm (1E44 ph/s/keV) 5.9152448E+08 thawn     0.0      1.00E+20
+   1    3 pow  gamm Photon index          1.905307     thawn    -10.       10.
+   1    3 pow  dgam Photon index break    0.000000     frozen   -10.       10.
+   1    3 pow  e0   Break energy (keV)   1.0000000E+10 frozen    0.0      1.00E+20
+   1    3 pow  b    Break strength        0.000000     frozen    0.0       10.
+   1    3 pow  type Type of norm          0.000000     frozen    0.0       1.0
+   1    3 pow  elow Low flux limit (keV)  2.000000     frozen   1.00E-20  1.00E+10
+   1    3 pow  eupp Upp flux limit (keV)  10.00000     frozen   1.00E-20  1.00E+10
+   1    3 pow  lum  Luminosity (1E30 W)  1.7594774E+07 frozen    0.0      1.00E+20
+
+   1    4 mbb  norm Norm (1E26 m**0.5)   5.0973240E+09 thawn     0.0      1.00E+20
+   1    4 mbb  t    Temperature (keV)    0.1519181     thawn    1.00E-04  1.00E+03
+
+   1    5 pion nh   X-Column (1E28/m**2) 7.1243332E-03 thawn    1.00E-14  1.00E+20
+   1    5 pion xil  Log xi (1E-9 Wm)     0.9757136     thawn    -7.0       10.
+   1    5 pion u    U                    9.9253699E-02 frozen   1.00E-10  1.00E+10
+   1    5 pion hden X-density(1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    5 pion fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    5 pion v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    5 pion rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    5 pion dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    5 pion zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    5 pion type type (0=xi , 1=lixi)  0.000000     frozen    0.0       1.0
+   1    5 pion lixi L_ion/xi (1E39/m)    2.2743856E+08 frozen   1.00E-20  1.00E+20
+   1    5 pion ref  Reference atom        1.000000     frozen    1.0       30.
+   1    5 pion 01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 03   Abundance Li          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 04   Abundance Be          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 05   Abundance B           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 09   Abundance F           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 15   Abundance P           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    5 pion 17   Abundance Cl          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 19   Abundance K           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 21   Abundance Sc          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 22   Abundance Ti          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 23   Abundance V           0.000000     frozen    0.0      1.00E+10
+   1    5 pion 24   Abundance Cr          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 25   Abundance Mn          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 27   Abundance Co          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    5 pion 29   Abundance Cu          0.000000     frozen    0.0      1.00E+10
+   1    5 pion 30   Abundance Zn          0.000000     frozen    0.0      1.00E+10
+   1    5 pion file File electr.distrib.
+   1    5 pion omeg Scaling factor emis.  0.000000     frozen    0.0      1.00E+10
+   1    5 pion mix  Fraction forw. emis.  1.000000     frozen    0.0       1.0
+   1    5 pion exth Extern heat (W/m**3)  0.000000     frozen  -1.00E+20  1.00E+20
+   1    5 pion fmod Show all solutions    0.000000     frozen    0.0       1.0
+   1    5 pion soln Which solution        0.000000     frozen    0.0       8.0
+   1    5 pion tmod Temperature mode      0.000000     frozen    0.0       1.0
+   1    5 pion tinp Input T (keV)         1.000000     frozen   5.00E-04  1.00E+03
+   1    5 pion tadi Adiab. cool time (s) 1.0000000E+30 frozen   1.00E-30  1.00E+30
+   1    5 pion acc  Acceler. (m/s**2)    5.9118149E-12 frozen    0.0       0.0
+
+   1    6 pion nh   X-Column (1E28/m**2) 9.9999998E-15 thawn    1.00E-14  1.00E+20
+   1    6 pion xil  Log xi (1E-9 Wm)     -7.000000     thawn    -7.0       10.
+   1    6 pion u    U                    1.0496225E-09 frozen   1.00E-10  1.00E+10
+   1    6 pion hden X-density(1E20/m**3) 9.9999998E-15 frozen   1.00E-22  1.00E+10
+   1    6 pion fcov Covering fraction     1.000000     frozen    0.0       1.0
+   1    6 pion v    RMS Velocity (km/s)   100.0000     frozen    0.0      3.00E+05
+   1    6 pion rms  RMS blend    (km/s)   0.000000     frozen    0.0      1.00E+05
+   1    6 pion dv   Vel. separ. (km/s)    100.0000     frozen    0.0      1.00E+05
+   1    6 pion zv   Average vel. (km/s)   0.000000     frozen  -1.00E+05  1.00E+05
+   1    6 pion type type (0=xi , 1=lixi)  0.000000     frozen    0.0       1.0
+   1    6 pion lixi L_ion/xi (1E39/m)    2.1506892E+16 frozen   1.00E-20  1.00E+20
+   1    6 pion ref  Reference atom        1.000000     frozen    1.0       30.
+   1    6 pion 01   Abundance H           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 02   Abundance He          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 03   Abundance Li          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 04   Abundance Be          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 05   Abundance B           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 06   Abundance C           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 07   Abundance N           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 08   Abundance O           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 09   Abundance F           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 10   Abundance Ne          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 11   Abundance Na          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 12   Abundance Mg          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 13   Abundance Al          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 14   Abundance Si          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 15   Abundance P           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 16   Abundance S           1.000000     frozen    0.0      1.00E+10
+   1    6 pion 17   Abundance Cl          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 18   Abundance Ar          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 19   Abundance K           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 20   Abundance Ca          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 21   Abundance Sc          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 22   Abundance Ti          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 23   Abundance V           0.000000     frozen    0.0      1.00E+10
+   1    6 pion 24   Abundance Cr          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 25   Abundance Mn          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 26   Abundance Fe          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 27   Abundance Co          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 28   Abundance Ni          1.000000     frozen    0.0      1.00E+10
+   1    6 pion 29   Abundance Cu          0.000000     frozen    0.0      1.00E+10
+   1    6 pion 30   Abundance Zn          0.000000     frozen    0.0      1.00E+10
+   1    6 pion file File electr.distrib.
+   1    6 pion omeg Scaling factor emis.  0.000000     frozen    0.0      1.00E+10
+   1    6 pion mix  Fraction forw. emis.  1.000000     frozen    0.0       1.0
+   1    6 pion exth Extern heat (W/m**3)  0.000000     frozen  -1.00E+20  1.00E+20
+   1    6 pion fmod Show all solutions    0.000000     frozen    0.0       1.0
+   1    6 pion soln Which solution        0.000000     frozen    0.0       8.0
+   1    6 pion tmod Temperature mode      0.000000     frozen    0.0       1.0
+   1    6 pion tinp Input T (keV)         1.000000     frozen   5.00E-04  1.00E+03
+   1    6 pion tadi Adiab. cool time (s) 1.0000000E+30 frozen   1.00E-30  1.00E+30
+   1    6 pion acc  Acceler. (m/s**2)    9.3092483E-22 frozen    0.0       0.0
+
+
+Instrument     1 region    1 has norm    1.00000E+00 and is frozen
+
+--------------------------------------------------------------------------------
+ Fluxes and restframe luminosities between   2.0000     and    10.000     keV
+
+ sect comp mod   photon flux   energy flux nr of photons    luminosity
+              (phot/m**2/s)      (W/m**2)   (photons/s)           (W)
+    1    3 pow    749.617      5.211338E-13  2.676023E+52  1.759451E+37
+    1    4 mbb    4.53838      1.572013E-15  2.439996E+50  8.422514E+34
+    1    5 pion   0.00000       0.00000       0.00000       0.00000
+    1    6 pion   0.00000       0.00000       0.00000       0.00000
+
+--------------------------------------------------------------------------------
+ Fit method        : Classical Levenberg-Marquardt
+ Fit statistic     : C-statistic
+ Fit statistic used:     86500.22
+ C-statistic       :     86500.22
+ Expected C-stat   :      4928.80 +/-        97.89
+ Chi-squared value :    678184.38
+ Degrees of freedom:      5330
+ W-statistic       :     84907.11
+
+fit
+plot
