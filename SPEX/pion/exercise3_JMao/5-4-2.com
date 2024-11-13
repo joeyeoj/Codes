@@ -17,7 +17,7 @@ par 1 4 tau0 val 1.3605E-2
 par 1 4 tau0 s f
 par 1 5 a val 1
 par 1 5 a s f
-par 1 5 tau0 val 1/13.605
+par 1 5 tau0 val 13.605
 par 1 5 tau0 s f
 cal
 pl ty model
